@@ -1,0 +1,164 @@
+/* =================================
+   SWEET TREATS BAKERY
+   OLD SCHOOL CSS STYLE
+   ================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ivory;
+    color: #4b3621;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ff69b4;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 4px solid #a90b5f;
+}
+
+/* NAVIGATION */
+
+nav {
+    font-size: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+}
+
+/* Simple old-school hover */
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: #fffdf0;
+
+    border: 2px solid #d6a64f;
+}
+
+/* MAIN HEADING */
+
+h1 {
+    color: #b86608;
+    text-align: center;
+    font-size: 32px;
+
+    border-bottom: 2px solid #d6a64f;
+    padding-bottom: 10px;
+}
+
+/* PRODUCT HEADINGS */
+
+h2 {
+    color: #2d15c8;
+    font-size: 25px;
+
+    border-left: 6px solid #e5a4b4;
+    padding-left: 10px;
+
+    margin-top: 30px;
+}
+
+/* PRODUCT PARAGRAPHS */
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* PRODUCT IMAGES */
+
+img {
+    display: block;
+
+    width: 300px;
+    height: auto;
+
+    margin: 15px auto 30px auto;
+
+    border: 4px solid #605542;
+    padding: 4px;
+
+    background-color: white;
+}
+
+/* DIFFERENT COLOURED BORDERS
+   FOR THE PRODUCT IMAGES */
+
+h2:nth-of-type(2) {
+    border-left-color: #033546;
+}
+
+h2:nth-of-type(3) {
+    border-left-color: #f30a44;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #ff8c00;
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+
+    border-top: 4px solid #0b67a9;
+
+    font-size: 14px;
+}
+
+/* =================================
+   SIMPLE MOBILE VERSION
+   ================================= */
+
+@media (max-width: 900px) {
+
+    main {
+        width: auto;
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 3px;
+    }
+}
