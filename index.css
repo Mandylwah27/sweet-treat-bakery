@@ -1,0 +1,215 @@
+/* ========================================
+   SWEET TREATS BAKERY - HOME PAGE
+   Sweet Gold Dust, Pink & Blue Theme
+   ======================================== */
+
+/* ===== BODY ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: ivory;
+    color: #5a3a2e;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(
+        90deg,
+        #d97706,
+        #f4b942,
+        #e8a317,
+        #f4b942,
+        #d97706
+    );
+
+    padding: 25px 15px;
+    text-align: center;
+
+    box-shadow:
+        0 4px 12px rgba(180, 110, 20, 0.3),
+        inset 0 -2px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    font-size: 16px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    margin: 5px 4px;
+    padding: 9px 13px;
+
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+}
+
+/* Navigation hover turns RED */
+
+nav a:hover {
+    background-color: red;
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(255, 0, 0, 0.3);
+}
+
+/* ===== MAIN SECTION ===== */
+
+main {
+    max-width: 950px;
+    margin: 45px auto;
+    padding: 45px;
+
+    background-color: #fffdf5;
+
+    border-radius: 25px;
+
+    border: 2px solid #f0c674;
+
+    box-shadow:
+        0 10px 30px rgba(180, 120, 40, 0.18);
+}
+
+/* ===== MAIN HEADING ===== */
+
+h1 {
+    text-align: center;
+
+    color: #c76508;
+
+    font-size: 42px;
+
+    text-transform: capitalize;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        2px 2px 0 #f8dca0;
+}
+
+/* ===== SECOND HEADING ===== */
+
+h2 {
+    text-align: center;
+
+    color: #d96b91;
+
+    font-size: 25px;
+
+    margin-bottom: 30px;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+p {
+    font-size: 17px;
+
+    margin-bottom: 22px;
+
+    text-align: justify;
+}
+
+/* Add a sweet decorative effect to the first paragraph */
+
+main p:first-of-type {
+    border-left: 5px solid #f2a65a;
+
+    padding-left: 18px;
+}
+
+/* ===== PINK ACCENT ===== */
+
+main p:nth-of-type(2) {
+    border-left: 5px solid #ec7597;
+
+    padding-left: 18px;
+}
+
+/* ===== BLUE ACCENT ===== */
+
+main p:nth-of-type(3) {
+    border-left: 5px solid #9bc7d8;
+
+    padding-left: 18px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: 50px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(
+        90deg,
+        #d97706,
+        #f4b942,
+        #e8a317,
+        #f4b942,
+        #d97706
+    );
+
+    box-shadow:
+        0 -4px 12px rgba(180, 110, 20, 0.2);
+
+    font-size: 14px;
+}
+
+/* ===== FOOTER TEXT ===== */
+
+footer::first-letter {
+    color: #fff2b2;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    nav a {
+        margin: 4px 2px;
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px 15px;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
