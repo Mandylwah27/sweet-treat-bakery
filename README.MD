@@ -1,4 +1,4 @@
-# Sweet Treats Bakery Website (HTML Project – Part 1)
+# Sweet Treats Bakery Website (HTML Project – Part 1 and part 2)
 
 ## Student Information
 - **Student Name:** Mandisa Msomi  
@@ -9,8 +9,8 @@
 ---
 
 ##  Project Overview
-This project is the first stage of building a website for **Sweet Treats Bakery**, a family‑owned bakery based in Durban, South Africa.  
-The website is created using **HTML only** for Part 1, focusing on structure and content without styling or advanced features.  
+These project are the stages of building a website for **Sweet Treats Bakery**, a family‑owned bakery based in Durban, South Africa.  
+The website is created using **HTML and css** for Part 1 and part 2, focusing on structure and content and styling or advanced features.  
 
 The purpose of the site is to introduce the bakery, share its story, display products, and provide contact information.  
 
@@ -19,9 +19,9 @@ The purpose of the site is to introduce the bakery, share its story, display pro
 ##  Project Structure
 The website contains the following HTML pages:
 
-- **index.html** → Homepage with welcome message and navigation.  
+- **index.html** → Homepage with welcome message and navigation with css.  
 - **about.html** → Organisation overview, mission, vision, and history.  
-- **service.html** → Products page showing cakes, bread, and pastries with descriptions and images.  
+- **service.html** → Products page showing cakes, bread, and pastries with descriptions images and colours.  
 - **enquiry.html** → Simple enquiry form for customers to send messages.  
 - **contact.html** → Contact details including phone, email, and address.  
 
@@ -43,7 +43,7 @@ Images are stored in the **PICTURE** folder:
 ---
 
 ##  Technical Requirements
-- **Language:** HTML only (Part 1).  
+- **Language:** HTML and css (Part 1 and part 2).  
 - **Editor:** Visual Studio Code.  
 - **Browser:** Microsoft Edge / Google Chrome.  
 - **Repository:** GitHub for submission.  
@@ -51,7 +51,7 @@ Images are stored in the **PICTURE** folder:
 
 ---
 
-## Budget (Part 1 Only)
+## Budget (Part 1 and part 2)
 - Domain name: ± R150 per year.  
 - Hosting: ± R50–R100 per month.  
 - Email hosting: ± R50 per month.  
@@ -60,19 +60,19 @@ Images are stored in the **PICTURE** folder:
 
 ---
 
-##  Timeline (Part 1)
+##  Timeline (Part 1 and part 2)
 - **Week 1:** Research and content collection.  
-- **Week 2:** Create HTML structure for all pages.  
-- **Week 3:** Add text and images.  
+- **Week 2: ** Create HTML structure and css for all pages.  
+- **Week 3:** Add text and images and css.  
 - **Week 4:** Test website in browser.  
 - **Week 5:** Submit project with README.md and documentation.  
 
 ---
 
 ##  Conclusion
-This project builds the foundation of the Sweet Treats Bakery website using HTML.  
-It provides a clear structure with multiple pages, product descriptions, and images.  
-Part 1 focuses on simplicity and functionality, preparing the site for future improvements with CSS and JavaScript.  
+This project builds the foundation of the Sweet Treats Bakery website using HTML and css.  
+It provides a clear structure with multiple pages, product descriptions, and images and css.  
+Part 1 and part 2 focuses on simplicity, functionality and css, preparing the site for future improvement of JavaScript.  
 
 ---
 
