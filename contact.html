@@ -1,61 +1,124 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="contact.css">
-    <title>Sweet Treats Bakery | Contact</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Contact Us | Sweet Treats Bakery</title>
+    <meta name="description"
+          content="Contact Sweet Treats Bakery by phone, email, or through the website contact form.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
 <body>
-    <header>
-        <!-- Contact page nav -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="service.html">Service</a> |
-            <a href="enquiry.html">Enquiry</a> |
-            <a href="contact.html">Contact</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            Sweet Treats <span>Bakery</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <h2>Get in Touch</h2>
-        <p>
-            We love hearing from our customers! Whether you want to place an order, ask a question, or share feedback,
-            we are here to help. Our team is friendly, responsive, and always ready to assist you.
-            You can reach us using the enquiry form, by phone, email, or by visiting our bakery in Durban.
-        </p>
-        <p>
-            At Sweet Treats Bakery, communication is important. We believe every customer deserves quick responses,
-            clear information, and personal attention. That is why we provide multiple ways to connect with us.
-        </p>
-        <!-- use of mailto and tel hrefs to allow click to call/email -->
-        <h3>Contact Details</h3>
-        <p><strong>Phone:</strong> <a href="tel:031-123-4567">031-123-4567</a></p>
-        <p><strong>Email:</strong> <a href="mailto:info@sweettreats.co.za">info@sweettreats.co.za</a></p>
-        <p><strong>Address:</strong> 123 Bakery Street, Durban, South Africa</p>
-        <p><strong>Opening Hours:</strong> Mon–Sat: 7am–6pm | Sun: 8am–2pm</p>
 
-        <h3>Send Us a Message</h3>
-        <!-- Contact capture form with basic customer details -->
-        <form>
-            Name: <input type="text" name="name"><br><br>
-            Email: <input type="email" name="email"><br><br>
-            Message: <textarea name="message"></textarea><br><br>
-            <button type="submit">Send Message</button>
-        </form>
+    <main id="main-content" class="page-main">
+        <section class="page-intro">
+            <p class="eyebrow">We'd love to hear from you</p>
+            <h1>Contact Us</h1>
+            <p>
+                Have a question, want to place an order, or need more
+                information? Use the contact details or send us a message.
+            </p>
+        </section>
 
-        <h3>Our Bakery Front</h3>
-        <img src="./assets/front" alt="Store Front" width="300">
+        <section class="contact-layout">
+            <div class="info-card">
+                <h2>Contact details</h2>
 
-        <h3>Customer Favorite</h3>
-        <h4>Red Velvet Cake</h4>
-        <img src="./assets/pic 2.png" alt="Red Velvet Cake" width="300">
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:0311234567">031-123-4567</a>
+                </p>
 
-          <!-- footer with basic contact information -->
-     <footer>
-        © 2026 Sweet Treats Bakery | Phone: <a href="tel:031-123-4567">031-123-4567</a> | Email: <a href="mailto:info@sweettreats.co.za">info@sweettreats.co.za</a>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@sweettreats.co.za">
+                        info@sweettreats.co.za
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Address:</strong>
+                    123 Bakery Street, Durban, South Africa
+                </p>
+
+                <p>
+                    <strong>Opening hours:</strong>
+                    Monday–Saturday: 7am–6pm;
+                    Sunday: 8am–2pm
+                </p>
+
+                <p class="form-note">
+                    Verify the address, phone number, email, and opening
+                    hours before publishing.
+                </p>
+
+                <h3>Customer favourite</h3>
+                <p>Red Velvet Cake</p>
+
+                <img
+                    class="contact-feature-image"
+                    src="assets/pic%202.png"
+                    alt="Red velvet cake"
+                    width="600"
+                    height="400">
+            </div>
+
+            <form class="contact-form" data-bakery-form>
+                <h2>Send us a message</h2>
+
+                <div class="form-field">
+                    <label for="contact-name">Name *</label>
+                    <input id="contact-name" name="name" type="text"
+                           autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-email">Email address *</label>
+                    <input id="contact-email" name="email" type="email"
+                           autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5"
+                              required></textarea>
+                </div>
+
+                <button class="button" type="submit">Send message</button>
+
+                <p class="form-status" aria-live="polite"></p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sweet Treats Bakery. All rights reserved.</p>
+        <address>
+            <a href="tel:0311234567">031-123-4567</a>
+            <span aria-hidden="true"> · </span>
+            <a href="mailto:info@sweettreats.co.za">info@sweettreats.co.za</a>
+        </address>
     </footer>
 </body>
-
 </html>

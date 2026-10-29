@@ -1,13 +1,11 @@
+
 <!DOCTYPE html>
-<html>
-
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sweet Treats Bakery | Fresh Cakes, Bread & Pastries</title>
+    <title>Sweet Treats Bakery | Fresh Cakes, Bread &amp; Pastries</title>
 
     <meta name="description"
           content="Discover Sweet Treats Bakery, offering freshly baked cakes, bread and pastries made with care for everyday treats and special occasions.">
@@ -15,46 +13,101 @@
     <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 
-
 <body>
-    <header>
-        <!-- main navigation section for website -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="service.html">Service</a> |
-            <a href="enquiry.html">Enquiry</a> |
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            Sweet Treats <span>Bakery</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <!-- Introduction to the bakery -->
-    <main>
-        <h1>Welcome to Sweet Treats Bakery</h1>
-        <h2>Freshly Baked Happiness, Every Day!</h2>
-        <p>
-            At Sweet Treats Bakery, we believe baking is more than food — it is joy, love, and celebration.
-            Every cake, bread, and pastry is made with care to bring a smile to your face.
-            Our bakery is a place where families gather, friends laugh, and communities connect.
-        </p>
-        <p>
-            We are committed to using the finest ingredients and traditional methods, while also exploring new flavors
-            to keep our customers excited. Our team works tirelessly to ensure that every product reflects quality,
-            creativity, and passion. We want every visitor to feel welcome, valued, and part of our bakery family.
-        </p>
-        <p>
-            Whether you are celebrating a birthday, enjoying a quiet coffee, or simply craving something sweet,
-            Sweet Treats Bakery is here to make every moment special. Step into our world of warmth, flavor, and
-            tradition,
-            and discover why we are more than just a bakery - we are a home of happiness.
-        </p>
+
+    <main id="main-content">
+        <section class="hero">
+            <p class="eyebrow">Freshly baked with care</p>
+
+            <h1>Welcome to Sweet Treats Bakery</h1>
+
+            <h2>Freshly Baked Happiness, Every Day!</h2>
+
+            <p>
+                At Sweet Treats Bakery, we believe baking is more than food —
+                it is joy, love, and celebration. Every cake, bread, and pastry
+                is made with care to bring a smile to your face.
+            </p>
+
+            <p>
+                We combine traditional methods with exciting flavours to create
+                treats for everyday moments and special occasions. We want every
+                visitor to feel welcome, valued, and part of our bakery family.
+            </p>
+
+            <p>
+                Whether you are celebrating a birthday, enjoying a quiet coffee,
+                or simply craving something sweet, Sweet Treats Bakery is here
+                to make every moment special.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button" href="service.html">Explore our products</a>
+                <a class="button button-secondary" href="enquiry.html">
+                    Make an enquiry
+                </a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Something delicious for every moment</h2>
+
+            <div class="card-grid">
+                <article class="info-card">
+                    <h3>Cakes</h3>
+                    <p>
+                        Find a sweet centrepiece for birthdays, celebrations,
+                        and other special occasions.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Fresh bread</h3>
+                    <p>
+                        Enjoy familiar bakery favourites for breakfast,
+                        lunch, and family meals.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Pastries</h3>
+                    <p>
+                        Choose a flaky or sweet treat to enjoy with tea,
+                        coffee, or whenever you fancy one.
+                    </p>
+                </article>
+            </div>
+        </section>
     </main>
-    <!-- footer with basic contact information with easy click to call/email actions throughout the website-->
-     <footer>
-        © 2026 Sweet Treats Bakery | Phone: <a href="tel:031-123-4567">031-123-4567</a> | Email: <a href="mailto:info@sweettreats.co.za">info@sweettreats.co.za</a>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sweet Treats Bakery. All rights reserved.</p>
+
+        <address>
+            <a href="tel:0311234567">031-123-4567</a>
+            <span aria-hidden="true"> · </span>
+            <a href="mailto:info@sweettreats.co.za">
+                info@sweettreats.co.za
+            </a>
+        </address>
     </footer>
 </body>
-
-
-</html> 
+</html>

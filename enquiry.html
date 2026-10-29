@@ -1,51 +1,98 @@
-<!DOCTYPE html>
-<html>
-<!--link must always be on the head of the html file-->
-<head>
-    <title>Sweet Treats Bakery | Enquiry</title>
-    <link rel="stylesheet" href="enquiry.css">
-</head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make an Enquiry | Sweet Treats Bakery</title>
+    <meta name="description"
+          content="Send Sweet Treats Bakery an enquiry about cakes, bread, pastries, or a special order.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
 <body>
-    <header>
-        <!-- Enquiry page nav -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="service.html">Service</a> |
-            <a href="enquiry.html">Enquiry</a> |
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            Sweet Treats <span>Bakery</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Products</a>
+            <a href="enquiry.html" aria-current="page">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <h1>Enquiry Form</h1>
-        <h2>Place an Order</h2>
-        <p>
-            We value our customers and make it easy to order your favorite treats.
-            Use the form below to send us your enquiry, and our team will respond quickly to confirm your order or
-            answer your questions.
-            We believe communication is key, and we want every customer to feel heard and appreciated.
-        </p>
-        <!-- Enquiry capture form for potential follow up orders -->
-        <form>
-            Full Name: <input type="text" name="fullname"><br><br>
-            Email Address: <input type="email" name="email"><br><br>
-            Phone Number: <input type="tel" name="phone"><br><br>
-            Product / Service:
-            <select name="product">
-                <option value="cakes">Cakes</option>
-                <option value="bread">Bread</option>
-                <option value="pastries">Pastries</option>
-            </select><br><br>
-            Details: <textarea name="details"></textarea><br><br>
-            <button type="submit">Submit Enquiry</button>
+
+    <main id="main-content" class="page-main narrow-main">
+        <section class="page-intro">
+            <p class="eyebrow">Let's plan something delicious</p>
+            <h1>Make an Enquiry</h1>
+            <p>
+                Tell us what you are interested in and include details
+                that will help us understand your request.
+            </p>
+        </section>
+
+        <form class="contact-form" data-bakery-form>
+            <p class="form-note">Fields marked with * are required.</p>
+
+            <div class="form-field">
+                <label for="fullname">Full name *</label>
+                <input id="fullname" name="fullname" type="text"
+                       autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email address *</label>
+                <input id="email" name="email" type="email"
+                       autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel"
+                       autocomplete="tel">
+            </div>
+
+            <div class="form-field">
+                <label for="product">Product or service *</label>
+                <select id="product" name="product" required>
+                    <option value="">Choose an option</option>
+                    <option value="cakes">Cakes</option>
+                    <option value="bread">Bread</option>
+                    <option value="pastries">Pastries</option>
+                    <option value="other">Other / not sure yet</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="details">Order or enquiry details *</label>
+                <textarea id="details" name="details" rows="5"
+                          placeholder="Tell us what you have in mind..."
+                          required></textarea>
+            </div>
+
+            <button class="button" type="submit">Submit enquiry</button>
+
+            <p class="form-status" aria-live="polite"></p>
+
         </form>
     </main>
-        <!-- footer with basic contact information -->
-     <footer>
-        © 2026 Sweet Treats Bakery | Phone: <a href="tel:031-123-4567">031-123-4567</a> | Email: <a href="mailto:info@sweettreats.co.za">info@sweettreats.co.za</a>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sweet Treats Bakery. All rights reserved.</p>
+        <address>
+            <a href="tel:0311234567">031-123-4567</a>
+            <span aria-hidden="true"> · </span>
+            <a href="mailto:info@sweettreats.co.za">info@sweettreats.co.za</a>
+        </address>
     </footer>
-
 </body>
-
 </html>
