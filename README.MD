@@ -1,4 +1,4 @@
-# Sweet Treats Bakery Website (HTML Project – Part 1 and part 2)
+# Sweet Treats Bakery Website (HTML Project – Part 1 and part 2 and part 3)
 
 ## Student Information
 - **Student Name:** Mandisa Msomi  
