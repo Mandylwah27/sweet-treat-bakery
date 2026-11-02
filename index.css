@@ -585,3 +585,71 @@ textarea {
     color: #666;
     min-height: 20px;
 }
+
+
+/* Dark mode toggle and theme */
+.theme-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 999px;
+    padding: 0.55rem 0.9rem;
+    background: rgba(92, 47, 8, 0.18);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background: rgba(92, 47, 8, 0.35);
+}
+
+body.dark-mode {
+    --cream: #191714;
+    --paper: #26221e;
+    --ink: #f4e9dc;
+    --muted: #c6b5a5;
+    --gold: #e0a04b;
+    --gold-dark: #f0b45e;
+    --gold-pale: #493721;
+    --pink: #f09ab5;
+    --blue-pale: #263c43;
+    --border: #514337;
+    --shadow: 0 12px 34px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .info-card,
+body.dark-mode .product-card,
+body.dark-mode .contact-form {
+    background: #302a24;
+    border-color: var(--border);
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #211e1a;
+    color: var(--ink);
+    border-color: #756657;
+}
+
+body.dark-mode .notice {
+    color: #d8edf2;
+}
+
+body.dark-mode .map-link a {
+    color: #f0b45e;
+}
+
+@media (max-width: 760px) {
+    .theme-toggle {
+        margin-inline: auto;
+    }
+}
+/* Hide product cards that do not match the search */
+.product-card[hidden] {
+    display: none !important;
+}
+
+.product-card[hidden] {
+    display: none !important;
+}
